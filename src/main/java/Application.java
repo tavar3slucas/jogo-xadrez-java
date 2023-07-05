@@ -1,8 +1,12 @@
+import UI.UI;
 import boardgame.Board;
+import boardgame.Piece;
+import chess.ChessMatch;
 
 public class Application {
     public static void main(String[] args) {
-        Board board = new Board(8,5);
-
+        ChessMatch chessMatch  = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
+
 }
